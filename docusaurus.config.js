@@ -100,19 +100,19 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'SocialMedia',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/fereria',
+              },
+              {
+                label: 'Reincarnation+#Tech',
+                href: 'https://fereria.github.io/reincarnation_tech/',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/fereria/reincarnation_tech',
               },
             ],
           },
@@ -122,10 +122,6 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
