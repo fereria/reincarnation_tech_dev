@@ -22,8 +22,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'fereria', // Usually your GitHub org/user name.
+  projectName: 'reincarnation_tech_dev', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -47,8 +47,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          showLastUpdateTime: true, // この行を追加
+          showLastUpdateAuthor: true, // お好みでこちらも          
         },
         blog: {
           showReadingTime: true,
@@ -73,6 +73,7 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
+        // Tab を追加する場合はここに追加
         items: [
           {
             to: '/dcc',
@@ -86,6 +87,14 @@ const config = {
             sidebarId: 'pipelineSidebar',
             position:'left'
           },
+          {
+            to : '/pg',
+            sidebarId: 'programmingSidebar',
+            position: 'left',
+            label: 'Programming',
+          },
+
+          // Blog
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/fereria/reincarnation_tech_dev',
