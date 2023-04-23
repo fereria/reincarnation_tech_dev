@@ -1,6 +1,7 @@
 ---
-slug: what_is_usd
+slug: /usd/what_is_usd
 title: USD とは (2022 年改定版)
+description: USDの概要説明
 tags:
     - USD
     - USD 基本

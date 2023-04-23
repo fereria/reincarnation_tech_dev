@@ -1,14 +1,13 @@
 {
 	"position": 2.5,
-	"label": "USD",
+	"label": "Composition",
 	"collapsible": true,
 	"collapsed": false,
 	"className": "red",
 	"link": {
 		"type": "generated-index",
-		"title": "USD 概要",
-		"description": "このページではUSDの概要を説明します。",
-		"slug": "/usd"
+		"title": "Tutorial overview",
+		"slug": "/usd/comp"
 	},
 	"customProps": {
 		"description": "This description can be used in the swizzled DocCard"
