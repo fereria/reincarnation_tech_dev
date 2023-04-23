@@ -27,6 +27,11 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['en', 'ja'],
+  },  
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -70,14 +75,20 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/dcc',
+            sidebarId: 'dccSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'DCCTool',
+          },
+          {
+            to: '/pipeline',
+            label: 'Pipeline',
+            sidebarId: 'pipelineSidebar',
+            position:'left'
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/fereria/reincarnation_tech_dev',
             label: 'GitHub',
             position: 'right',
           },
