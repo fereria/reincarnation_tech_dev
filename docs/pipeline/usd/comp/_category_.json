@@ -1,12 +1,12 @@
 {
 	"position": 2.5,
-	"label": "Composition",
+	"label": "USDの「Composition」について",
 	"collapsible": true,
 	"collapsed": false,
 	"className": "red",
 	"link": {
 		"type": "generated-index",
-		"title": "Tutorial overview",
+		"title": "USDの「コンポジション」概要",
 		"slug": "/usd/comp"
 	},
 	"customProps": {

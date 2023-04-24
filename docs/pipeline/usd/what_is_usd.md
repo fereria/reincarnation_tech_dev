@@ -7,6 +7,7 @@ tags:
     - USD 基本
     - CEDEC2022
     - AdventCalendar2022
+sidebar_position: 0
 ---
 
 ## リニューアルに際して

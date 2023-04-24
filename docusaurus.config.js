@@ -122,15 +122,6 @@ const config = {
               },
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-            ],
-          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Reincarnation#Tech, Inc. Built with Megumi Ando.`,
       },

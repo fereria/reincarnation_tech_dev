@@ -6,8 +6,8 @@
 	"className": "red",
 	"link": {
 		"type": "generated-index",
-		"title": "${0}",
-		"description": "${1}",
-		"slug": "/${2}"
+		"title": "USD",
+		"description": "USDについてとその使い方",
+		"slug": "/usd"
 	}
 }
