@@ -93,11 +93,6 @@ const config = {
             position: 'left',
             label: 'Programming',
           },
-          {
-            to: '/article',
-            position:'left',
-            label:'Article'
-          },
           // Blog
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -144,21 +139,21 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    plugins:[
-      [
-        // ディレクトリを docs 以外にも配置できるようにする
-        '@docusaurus/plugin-content-docs',
-        {
-          id: 'article',
-          path: 'article',
-          routeBasePath: 'article',
-          editCurrentVersion: true,
-          sidebarPath: require.resolve('./article/sidebars.js'),
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
-        },
-      ],
-    ]
+    // plugins:[
+    //   [
+    //     // ディレクトリを docs 以外にも配置できるようにする
+    //     '@docusaurus/plugin-content-docs',
+    //     {
+    //       id: 'article',
+    //       path: 'article',
+    //       routeBasePath: 'article',
+    //       editCurrentVersion: true,
+    //       sidebarPath: require.resolve('./article/sidebars.js'),
+    //       showLastUpdateAuthor: true,
+    //       showLastUpdateTime: true,
+    //     },
+    //   ],
+    // ]
 };
 
 module.exports = config;
