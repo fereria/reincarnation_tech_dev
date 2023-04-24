@@ -1,6 +1,7 @@
 ---
 slug: /pg
 title: プログラミング
+sidebar_position: 0
 ---
 
 :::info
