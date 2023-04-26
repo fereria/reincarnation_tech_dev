@@ -118,7 +118,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Reincarnation#Tech, Inc. Built with Megumi Ando.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Reincarnation#Tech, Built with Megumi Ando.`,
       },
       prism: {
         theme: lightCodeTheme,
