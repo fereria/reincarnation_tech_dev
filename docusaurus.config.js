@@ -28,11 +28,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   
-  i18n: {
-    defaultLocale: 'ja',
-    locales: ['en', 'ja'],
-  },  
-
+  
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -65,7 +61,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      // Replace with your project's social card      
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Reincarnation+#Tech りにゅーある中',
