@@ -71,6 +71,7 @@ const config = {
         },
         // Tab を追加する場合はここに追加
         items: [
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             to: '/dcc',
             sidebarId: 'dccSidebar',
@@ -89,8 +90,11 @@ const config = {
             position: 'left',
             label: 'Programming',
           },
-          // Blog
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/tags',
+            label: 'Tags',
+            position: 'left'
+          },
           {
             href: 'https://github.com/fereria/reincarnation_tech_dev',
             label: 'GitHub',
