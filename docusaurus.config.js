@@ -91,6 +91,12 @@ const config = {
             label: 'Programming',
           },
           {
+            to : '/ta',
+            sidebarId: 'taSidebar',
+            position: 'left',
+            label: 'TechArtist',
+          },
+          {
             to: '/tags',
             label: 'Tags',
             position: 'left'
