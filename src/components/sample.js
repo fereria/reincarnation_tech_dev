@@ -1,21 +1,41 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-const LinkCard = ({ title, description, link }) => {
+const LinkCard = ({ url }) => {
+  
+  console.log(url);
+  const [metadata, setMetadata] = useState(null);
+  
+  useEffect(() => {
+    const fetchMetadata = async () => {
+      try {
+        const response = await fetch('/reincarnation_tech_dev' + url);
+        console.log(response.text());
+        setMetadata(response.data);
+      } catch (error) {
+        console.error('Error fetching metadata:', error);
+      }
+    };
+
+    fetchMetadata();
+  }, [url]);
+
+  if (!metadata) {
+    return null; // メタデータが読み込まれるまで何も表示しない
+  }
+
   return (
     <div className="link-card">
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <Link to={link}>Go to {title}</Link>
+      <div className="thumbnail">
+        <img src={metadata.thumbnailUrl} alt="Thumbnail" />
+      </div>
+      <div className="details">
+        <h2>{metadata.title}</h2>
+        <p>{metadata.description}</p>
+        {/* その他のメタデータを表示する */}
+      </div>
     </div>
   );
-};
-
-LinkCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
 };
 
 export default LinkCard;
