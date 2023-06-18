@@ -156,7 +156,7 @@ usdView の TreeView に対して何かをしたい場合は self.usdviewApi.dat
 
 self.usdviewApi.stage で、現在の Stage を取得することができるので
 新しい Prim を追加する場合などは、取得した Stage に対して DefinePrim であったり
-UsdGeom.Define(stage,"<PATH>")
+UsdGeom.Define(stage,"PATH")
 を利用して Prim を追加することができます。
 
 TreeView に増やした Prim を選択状態にしたい場合は、
@@ -165,7 +165,7 @@ TreeView に増やした Prim を選択状態にしたい場合は、
 self.usdviewApi.dataModel.selection.setPrim(xform)
 ```
 
-selection.setPrim(\<primObj\>)
+selection.setPrim(primObj)
 
 このように setPrim で、選択したい Prim を指定します。
 
